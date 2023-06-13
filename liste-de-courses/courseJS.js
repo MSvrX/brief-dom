@@ -1,3 +1,5 @@
+"use strcit";
+
 let btnSubmit = document.getElementById("btnSubmit");
 let text = document.getElementById("text");
 let ul = document.getElementById("ul");
