@@ -1,8 +1,25 @@
-.box {
-    width: 200px;
-    height: 200px;
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
-    padding: 20px;
-    box-sizing: border-box;
-}
+.carousel {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slide {
+    width: 100%;
+    display: none;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .prev,
+  .next {
+    margin-top: 10px;
+  }
+  
+  .prev {
+    margin-right: 10px;
+  }
+  
+  
