@@ -7,15 +7,25 @@
     <link rel="stylesheet" href="scoreStyle.css" />
   </head>
   <body>
-    <header><h1>Score keeper</h1></header>
-    <h2>
-      Player One <span id="scorePlayerOne">0</span> to
-      <span id="scorePlayerTwo">0</span> Player Two
-    </h2>
-    <input type="number" id="maximumPoints" />
-    <button id="btnP1">Player One</button>
-    <button id="btnP2">Player two</button>
-    <button id="btnReset">reset</button>
+    <header>
+      <h1>Score keeper</h1>
+    </header>
+    <main>
+      <section id="box">
+        <h2 id="title">
+          Player One <span id="scorePlayerOne">0</span> to
+          <span id="scorePlayerTwo">0</span> Player Two
+        </h2>
+        <div class="container">
+          <input type="number" id="maximumPoints" />
+          <div class="buttons">
+            <button id="btnP1">Player One</button>
+            <button id="btnP2">Player two</button>
+            <button id="btnReset">reset</button>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="scoreJS.js"></script>
   </body>
 </html>
