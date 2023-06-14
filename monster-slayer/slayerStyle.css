@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    margin: 3vh;
+}
+.newGame {
+    text-align: center;
+}
+
+#startGame {
+    padding: 2vh 6vh;
+    background-color: aquamarine;
+    text-transform: uppercase;
+}
+#startGame:hover {
+    background-color: rgb(46, 150, 115);
+}
+
+#btn {
+    text-align: center;
+    margin: 1vh;
+    display: none;
+}
+
+h2{
+    visibility: hidden;
+}
+
+#btnAttack {
+    padding: 1vh 3vh;
+    margin: 1vh;
+    background-color: red;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+#btnSpeAttack {
+    padding: 1vh 3vh;
+    margin: 1vh;
+    background-color: orangered;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+#btnHeal {
+    padding: 1vh 3vh;
+    margin: 1vh;
+    background-color: green;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+#btnGiveUp {
+    padding: 1vh 3vh;
+    margin: 1vh;
+    background-color: blue;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+#btnAttack:hover {
+    background-color: darkred;
+}
+#btnSpeAttack:hover {
+    background-color: rgb(195, 52, 0);
+}
+#btnHeal:hover {
+    background-color: darkgreen;
+}
+#btnGiveUp:hover {
+    background-color: darkblue;
+}
+
+#character, #monster {
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+
+
+.pv {
+    border: 1px solid green;
+    width: 200px;
+    height: 20px;
+    background-color: green;
+    padding-right: 30vw;
+    margin-left: 10px;
+    text-align: center;
+}
