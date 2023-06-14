@@ -33,6 +33,8 @@ function playerTwoScored() {
   if (Number(playerTwo.textContent) >= maximumPoints) {
     playerTwo.style.color = "green";
     playerOne.style.color = "red";
+    btnPlayerOne.style.display = "none";
+    btnPlayerTwo.style.display = "none";
   } else {
     let plusOnePoint = Number(playerTwo.textContent) + 1;
     console.log(plusOnePoint);
