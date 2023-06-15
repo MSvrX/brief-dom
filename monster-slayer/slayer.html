@@ -11,12 +11,14 @@
       <h1>Monster Slayer</h1>
     </header>
     <main>
-      <section>
-        <h2>group for HUD</h2>
-        <div id="character">Unknown Player's life:</div>
-        <span class="pv">100PV</span>
-        <div id="monster">Unknown Monster's life:</div>
-        <span class="pv">100PV</span>
+      <section class="lifeStatus">
+        <h2 class="hudTitle">group for HUD</h2>
+        <div>
+          <div id="character">Unknown Player's life:</div>
+          <span id="playerLife" class="pv lastingLifePlayer">100</span>
+          <div id="monster">Unknown Monster's life:</div>
+          <span id="monsterLife" class="pv lastingLifeMonster">100</span>
+        </div>
       </section>
       <section>
         <h2>group of Buttons</h2>
