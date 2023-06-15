@@ -17,6 +17,7 @@ const heal = document.getElementById("btnHeal");
 let playersLife = document.getElementById("playerLife").textContent;
 let monstersLife = document.getElementById("monsterLife").textContent;
 let currentLifeBar = document.querySelector(".lastingLifePlayer");
+let currentMonsterBar = document.querySelector(".lastingLifeMonster");
 
 let pvMax = 100;
 let min = 1;
@@ -38,6 +39,8 @@ function startAnotherGame() {
     "Enter the type of monster you are fighting",
     "unknown monster"
   );
+  currentLifeBar.style.width = 100 + "%";
+  currentMonsterBar.style.width = 100 + "%";
 }
 
 function startNewGame() {
@@ -74,6 +77,10 @@ function simpleAttack() {
   document.getElementById("playerLife").textContent = playersLife;
   document.getElementById("monsterLife").textContent = monstersLife;
   console.log(playersLife, monstersLife);
+  let lifeBar = (playersLife / pvMax) * 100;
+  currentLifeBar.style.width = lifeBar + "%";
+  let monsterBar = (monstersLife / pvMax) * 100;
+  currentMonsterBar.style.width = monsterBar + "%";
 
   if (playersLife <= 0) {
     alert(`${playerName} died fighting ${monsterType}`);
@@ -105,6 +112,10 @@ function specialAttack() {
   document.getElementById("playerLife").textContent = playersLife;
   document.getElementById("monsterLife").textContent = monstersLife;
   console.log(playersLife, monstersLife);
+  let lifeBar = (playersLife / pvMax) * 100;
+  currentLifeBar.style.width = lifeBar + "%";
+  let monsterBar = (monstersLife / pvMax) * 100;
+  currentMonsterBar.style.width = monsterBar + "%";
 
   if (playersLife <= 0) {
     alert(`${playerName} died fighting ${monsterType}`);
@@ -136,6 +147,10 @@ function healPlayer() {
   document.getElementById("playerLife").textContent = playersLife;
   document.getElementById("monsterLife").textContent = monstersLife;
   console.log(playersLife, monstersLife);
+  let lifeBar = (playersLife / pvMax) * 100;
+  currentLifeBar.style.width = lifeBar + "%";
+  let monsterBar = (monstersLife / pvMax) * 100;
+  currentMonsterBar.style.width = monsterBar + "%";
 
   if (playersLife > 100) {
     alert(`You are full life and don't need anymore heal`);
